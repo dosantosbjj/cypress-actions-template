@@ -1,0 +1,17 @@
+name: Cypress Pipeline
+
+on: [push]
+
+jobs: 
+  cypress-electron-tests:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4.2.1
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run E2E tests
+        run: npm cypress run
+    
