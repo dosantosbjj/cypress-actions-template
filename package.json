@@ -13,6 +13,6 @@
     "cypress": "12.5.1"
   },
   "dependencies": {
-    "cypress-tesults-reporter": "^1.4.1"
+    "cypress-tesults-reporter": "1.2.0"
   }
 }
